@@ -8,10 +8,13 @@
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "db:migrate-local": "dotenv -e .env.local -- pnpm exec prisma migrate dev",
+    "db:studio-local": "dotenv -e .env.local -- pnpm exec prisma studio"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.1",
+    "@prisma/client": "4.16.2",
     "@types/node": "20.3.2",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.6",
@@ -30,6 +33,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
+    "dotenv-cli": "^7.2.1",
     "eslint": "8.43.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-typescript": "^3.5.5",
@@ -38,6 +42,7 @@
     "husky": "^8.0.0",
     "lint-staged": "^13.2.3",
     "prettier": "^2.8.8",
+    "prisma": "^4.16.2",
     "typescript": "5.0.4"
   }
 }
