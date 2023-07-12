@@ -15,7 +15,6 @@
   "root": true,
   "rules": {
     "import/no-named-as-default": 0,
-    "import/exports-last": "error",
     "import/order": "error",
     "react/no-unescaped-entities": 0,
     "@typescript-eslint/ban-types": [
